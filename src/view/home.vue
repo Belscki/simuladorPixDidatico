@@ -50,11 +50,11 @@ export default {
 
     const bancos = [
       "Nubank",
-      "Banco do Brasil",
+      "BancodoBrasil",
       "Bradesco",
       "Santander",
       "Itaú",
-      "Caixa Economica"
+      "Caixa Economica" 
     ];
 
     const getImg = (name) => {

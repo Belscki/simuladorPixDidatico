@@ -41,19 +41,19 @@
                         <div class="flex flex-col justify-center items-center">
                         <h1
                             class="bg-gray-100 hover:bg-gray-200 rounded-full w-[60px] h-[60px] text-2xl flex justify-center items-center">
-                            💳</h1>
+                            X</h1>
                         <h1 class="text-xl">Programar</h1>
                     </div>
                     <div class="flex flex-col justify-center items-center">
                         <h1
                             class="bg-gray-100 hover:bg-gray-200 rounded-full w-[60px] h-[60px] text-2xl flex justify-center items-center">
-                            💳</h1>
+                            X</h1>
                         <h1 class="text-xl">Ler QR code</h1>
                     </div>
                     <div class="flex flex-col justify-center items-center">
                         <h1
                             class="bg-gray-100 hover:bg-gray-200 rounded-full w-[60px] h-[60px] text-2xl flex justify-center items-center">
-                            💳</h1>
+                            X</h1>
                         <h1 class="text-xl">Pix Copia e Cola</h1>
                     </div>
                 </div>

@@ -4,9 +4,8 @@ import './assets/tailwind.css'
 import { createRouter, createWebHistory } from 'vue-router'
 
 //views
-// import login from "./view/login.vue"
-
 import home from './view/home.vue'
+import notfound from './view/notfound.vue'
 
 //Nubank
 import nubank from './view/nubank/nubank.vue'
@@ -15,6 +14,9 @@ import valuepaymentnubank from './view/nubank/valuepaymentnubank.vue'
 import reciptnubank from './view/nubank/reciptnubank.vue'
 import destinationpixnubank from './view/nubank/destinationpixnubank.vue'
 import confimationnubank from './view/nubank/confimationnubank.vue'
+
+//BancodoBrasil
+import bancodobrasil from './view/bancodobrasil/bancodobrasil.vue'
 
 import $ from 'jquery'
 import { io } from 'socket.io-client'
@@ -26,6 +28,12 @@ const router = createRouter({
       path: "/",
       component: home
     },
+    //NotFound
+    {
+      path: "/:pathMatch(.*)",
+      component: notfound
+    },
+    //Nubank
     {
       path:"/Home",
       component: home
@@ -54,6 +62,11 @@ const router = createRouter({
       path:"/Nubank/Payment/Value/Recipt",
       component:reciptnubank
     },
+    //Banco do Brasil
+    {
+      path: "/BancodoBrasil",
+      component: bancodobrasil
+    }
   ],
   history: createWebHistory()
 })

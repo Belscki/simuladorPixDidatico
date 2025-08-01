@@ -51,27 +51,30 @@
             <div class="flex flex-col items-center text-sm">
               <div
                 class="bg-gray-100 w-14 h-14 rounded-full flex items-center justify-center  hover:bg-gray-200 text-xl">
-                🏦</div>
+              <img class="w-7" src="../../assets/PIX.png" alt=""></img>  
+              </div>
               <span class="mt-1">Pix</span>
             </div>
           </router-link>
           <div class="flex flex-col items-center text-sm">
-            <div class="bg-gray-100 w-14 h-14 rounded-full flex items-center justify-center text-xl">💳</div>
+            <div class="bg-gray-100 w-14 h-14 rounded-full flex items-center justify-center text-xl">
+              X
+            </div>
             <span class="mt-1">Pagar</span>
           </div>
           <div class="flex flex-col items-center text-sm">
-            <div class="bg-gray-100 w-14 h-14 rounded-full flex items-center justify-center text-xl">💸</div>
+            <div class="bg-gray-100 w-14 h-14 rounded-full flex items-center justify-center text-xl">X</div>
             <span class="mt-1">Transferir</span>
           </div>
           <div class="flex flex-col items-center text-sm">
-            <div class="bg-gray-100 w-14 h-14 rounded-full flex items-center justify-center text-xl">💰</div>
+            <div class="bg-gray-100 w-14 h-14 rounded-full flex items-center justify-center text-xl">X</div>
             <span class="mt-1">Depositar</span>
           </div>
         </div>
 
         <!-- Meus Cartões -->
         <div class="bg-gray-100 rounded-xl px-4 py-3 flex items-center space-x-3 mb-4">
-          <span class="text-lg">💳</span>
+          <span class="text-lg">X</span>
           <span class="text-sm font-medium">Meus cartões</span>
         </div>
 
@@ -79,7 +82,7 @@
         <div class="bg-white py-4">
           <div class="flex justify-between items-center">
             <div class="flex items-center space-x-2">
-              <span class="text-lg">🔒</span>
+              <span class="text-lg">X</span>
               <span class="text-gray-400 font-semibold">Cartão bloqueado</span>
             </div>
             <span class="text-gray-400 text-xl">›</span>
@@ -99,6 +102,8 @@
 <script>
 export default {
   setup() {
+  const thisBank = "Nubank";
+    
     var bankvalue
     if (sessionStorage.getItem("bankvalue")) {
       bankvalue = sessionStorage.getItem("bankvalue");
@@ -108,7 +113,8 @@ export default {
     }
 
     return {
-      bankvalue
+      bankvalue,
+      thisBank
     };
   }
 };
